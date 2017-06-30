@@ -1,0 +1,19 @@
+// START SERVER to resolve Failed to execute 'toDataURL'
+// on 'HTMLCanvasElement': Tainted canvases may not be
+// exported. as below
+
+    SOLUTION 1 USING NODE:
+
+    1. Run node --version from the terminal or command line. If nothing shows up or you get an error, install Node.
+    2. Run npm install -g http-server.
+    3. Serve files with http-server ~/Documents/mysite -p 8000 (replace ~/Documents/mysite with the path to your
+       project's directory!).
+    4. Navigate your browser to http://localhost:8000 to test!
+
+    SOLUTION 2 USING PYTHON:
+    1. Run python --version. If Python is installed, you'll see "Python X.Y.Z". The "X" will be 2 or 3, indicating
+       Python 2 or 3. If nothing shows up or the command produces an error, you download Python.
+    2. If you have Python 2, run python -m SimpleHTTPServer 8000. If you have Python 3, run python3 -m http.server
+       8000.
+    3. Navigate your browser to http://localhost:8000/. If there is a file called index.html in the directory where
+       you ran the command from step 4, then it should automatically show up! If not, you should see the files in that directory listed. Click on an HTML file and watch it load! Congrats! You've got a server running.
